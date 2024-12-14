@@ -1,50 +1,86 @@
-# Welcome to your Expo app 👋
+# User Directory App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern and efficient User Directory app built using React Native and Expo. The app features a sleek dark theme UI, infinite scrolling, user search functionality, and detailed user profiles. 
 
-## Get started
+---
 
-1. Install dependencies
+## Features
 
+- **User List with Infinite Scrolling**: Fetches user data dynamically using the [dummyJSON API](https://dummyjson.com/users), ensuring smooth performance with on-demand data loading.
+- **Search Functionality**: Allows users to search by name or email, powered by real-time API filtering.
+- **Detailed User Profiles**: Each user has a dedicated page displaying information such as:
+  - Name
+  - Email
+  - Address
+  - Phone Number
+  - Company
+- **Dark and Modern UI**: Built with intuitive design for a smooth, user-friendly experience.
+
+### Why dummyJSON API?
+I switched to `dummyJSON` instead of `jsonplaceholder` due to its extended dataset, which supports more advanced features.
+
+---
+
+## Screenshots
+
+![Home Screen](assets/screenshots/home.jpg)
+-
+![Search Feature](assets/screenshots/search.jpg)
+-
+![User Details](assets/screenshots/user-details.jpg)
+
+---
+
+## Challenges Faced
+
+1. **Search Functionality**: 
+   - Tweaking API calls to ensure efficient filtering based on search input (name or email).
+2. **Smooth Performance**:
+   - Implementing infinite scrolling without lag using optimized state management and Expo features.
+
+---
+
+## Technologies & Libraries
+
+- **React Native**: Core framework for building the app.
+- **Expo**: Facilitates rapid development with tools and APIs.
+- **Axios**: For seamless API requests.
+- **React Navigation**: To manage app navigation (stack, tab, and nested navigators).
+- **FlatList**: Efficiently renders the infinite scrolling list.
+- **React Native Reanimated**: Enhances animations and interactions.
+- **Expo Image**: For image loading and caching.
+
+---
+
+## How to Run the App
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) installed on your machine.
+- Expo CLI installed globally. (`npm install -g expo-cli`)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   https://github.com/Anmol-Awasthi/User-Directory.git
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Start the Expo development server:
+   ```bash
+   npx expo start
+   ```
+   
+   or
 
    ```bash
-    npx expo start
+   expo start 
    ```
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4. Run the app on your device:
+   - Use the Expo Go app (available on iOS and Android) to scan the QR code.
+   - Or use an emulator/simulator.

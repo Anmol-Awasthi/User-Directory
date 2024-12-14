@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "UserDirectory",
+    "name": "User Directory",
     "slug": "UserDirectory",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "./assets/Logo.png",
+    "scheme": "userDirectory",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -13,9 +13,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/SplashScreen.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anmol7.UserDirectory"
     },
     "web": {
       "bundler": "metro",
@@ -27,15 +28,23 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
+          "image": "./assets/SplashScreen.png",
+          "imageWidth": "100%",
+          "resizeMode": "cover",
           "backgroundColor": "#ffffff"
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "1e74fcf8-de83-4a5e-ac6e-2c78255a9a08"
+      }
     }
   }
 }
